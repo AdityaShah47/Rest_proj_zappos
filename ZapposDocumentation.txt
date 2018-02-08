@@ -1,0 +1,55 @@
+In API.PY:-
+
+For Restaurant:
+	1. createRestaurant - PUT - creates a restaurant only if it does not exist.
+		Parameters - Restaurant_id, Restaurant_name, Restaurant_contact, Restaurant_address.
+	
+	2. updateRestaurant - POST - updates the Name, Address, Contact field of Restaurant individually or all together.
+		Parameters - Id, Name, Address, Contact, NewName, NewAddress, NewContact.
+	
+	3. getSpecificRestaurant - GET - gets the particular Restaurant based on it's id, name, address or contact.
+		Parameters - Id, Name/Address/Contact.
+	
+	4. getRestaurants - GET - gets all the restaurants in the database.
+		Parameters - None.
+	
+	5. deleteRestaurant - DELETE - deletes the restaurant given specific id, name and address/contact.
+		Parameters - Id, Name and Address/Contact.
+		
+		
+		
+	
+For Menu:
+	6. createMenu - PUT - creates a Menu only if it does not exist.
+		Parameters - Menu_id, Menu_name, RESTAURANT_ID.
+	
+	7. updateMenu - POST - updates the Name field of Menu.
+		Parameters - Id, Name , NewName.
+	
+	8. getSpecificMenu - GET - gets the particular Menu based on it's id, name or restaurant_id.
+		Parameters - Id, Name, restaurant_id.
+	
+	9. getMenus - GET - gets all the Menus in the database.
+		Parameters - None.
+	
+	10. deleteMenu - DELETE - deletes the restaurant given specific id, name and restaurant_id.
+		Parameters - Id, Name and restaurant_id.
+	
+	
+	
+	
+For Item:
+	11. createItem - PUT - creates a Item only if it does not exist.
+		Parameters - item_id, item_name, item_cost, Menu_id.
+	
+	12. updateItem - POST - updates the Name, Cost field of Item individually or all together.
+		Parameters - Id, Name, Cost, NewName, NewCost.
+	
+	13. getSpecificItem - GET - gets the particular Item based on it's id, name, cost or menu_id.
+		Parameters - Id, Name/Cost/Menu_id.
+	
+	14. getItems - GET - gets all the Items in the database.
+		Parameters - None.
+	
+	15. deleteItem - DELETE - deletes the Item given specific id, name and cost/menu_id.
+		Parameters - Id, Name and Menu_id/Cost
